@@ -31,10 +31,6 @@
 		E0B7BE622BD29CEE00FA1D36 /* CBTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7BE612BD29CED00FA1D36 /* CBTabBarItem.swift */; };
 		E0B7BE642BD29DDF00FA1D36 /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7BE632BD29DDF00FA1D36 /* BubbleTabBarController.swift */; };
 		E0B7BE662BD2A82000FA1D36 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7BE652BD2A82000FA1D36 /* HomeVC.swift */; };
-		E0C9CA3B2BE0D22800AEE340 /* UIColor+ContrastRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9CA362BE0D22800AEE340 /* UIColor+ContrastRatio.swift */; };
-		E0C9CA3D2BE0D22800AEE340 /* TactileSliderLayerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9CA382BE0D22800AEE340 /* TactileSliderLayerRenderer.swift */; };
-		E0C9CA3E2BE0D22800AEE340 /* TactileSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9CA392BE0D22800AEE340 /* TactileSlider.swift */; };
-		E0C9CA3F2BE0D22800AEE340 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9CA3A2BE0D22800AEE340 /* TactileSlider+UIPointerInteractionDelegate.swift */; };
 		E0C9CA412BE0D32C00AEE340 /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9CA402BE0D32C00AEE340 /* LaunchScreenVC.swift */; };
 		E0F719722BD0F0C600D31F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F719712BD0F0C600D31F52 /* AppDelegate.swift */; };
 		E0F719742BD0F0C600D31F52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F719732BD0F0C600D31F52 /* SceneDelegate.swift */; };
@@ -72,10 +68,6 @@
 		E0B7BE612BD29CED00FA1D36 /* CBTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTabBarItem.swift; sourceTree = "<group>"; };
 		E0B7BE632BD29DDF00FA1D36 /* BubbleTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTabBarController.swift; sourceTree = "<group>"; };
 		E0B7BE652BD2A82000FA1D36 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		E0C9CA362BE0D22800AEE340 /* UIColor+ContrastRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ContrastRatio.swift"; sourceTree = "<group>"; };
-		E0C9CA382BE0D22800AEE340 /* TactileSliderLayerRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileSliderLayerRenderer.swift; sourceTree = "<group>"; };
-		E0C9CA392BE0D22800AEE340 /* TactileSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileSlider.swift; sourceTree = "<group>"; };
-		E0C9CA3A2BE0D22800AEE340 /* TactileSlider+UIPointerInteractionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TactileSlider+UIPointerInteractionDelegate.swift"; sourceTree = "<group>"; };
 		E0C9CA402BE0D32C00AEE340 /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		E0F7196E2BD0F0C600D31F52 /* BP Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BP Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F719712BD0F0C600D31F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74FF08E32BE6455E0063071F /* TabBar Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0B7BE652BD2A82000FA1D36 /* HomeVC.swift */,
+				E0A913CF2BD664E600EB0AEC /* InsightVC.swift */,
+				E0A913C62BD63F5800EB0AEC /* SettingsVC.swift */,
+			);
+			path = "TabBar Controllers";
+			sourceTree = "<group>";
+		};
 		E0A913C82BD646CC00EB0AEC /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +130,6 @@
 		E0B7BE522BD13D8400FA1D36 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E0C9CA352BE0D22800AEE340 /* TactileSlider */,
 				E0B7BE682BD2A89800FA1D36 /* Tabbar */,
 				E0F719872BD0F1B700D31F52 /* CornerRadius.swift */,
 				E0F7198D2BD1062D00D31F52 /* ImageHelper.swift */,
@@ -145,6 +146,7 @@
 				E0A913D12BD665CC00EB0AEC /* CollectionViewCells */,
 				E0F719772BD0F0C600D31F52 /* Main.storyboard */,
 				E0F7197C2BD0F0C900D31F52 /* LaunchScreen.storyboard */,
+				E0C9CA402BE0D32C00AEE340 /* LaunchScreenVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,13 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				E0B7BE672BD2A87300FA1D36 /* OnBoardingControllers */,
-				E0B7BE652BD2A82000FA1D36 /* HomeVC.swift */,
-				E0A913CF2BD664E600EB0AEC /* InsightVC.swift */,
-				E0A913C62BD63F5800EB0AEC /* SettingsVC.swift */,
+				74FF08E32BE6455E0063071F /* TabBar Controllers */,
 				E0A913DC2BD69ECC00EB0AEC /* ReminderVC.swift */,
 				E0A5F58A2BD79C9200413011 /* HistoryVC.swift */,
 				E0A9C3BA2BD8DE5700C3D49C /* HeartInsightVC.swift */,
-				E0C9CA402BE0D32C00AEE340 /* LaunchScreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,18 +200,6 @@
 				E0B7BE632BD29DDF00FA1D36 /* BubbleTabBarController.swift */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		E0C9CA352BE0D22800AEE340 /* TactileSlider */ = {
-			isa = PBXGroup;
-			children = (
-				E0C9CA362BE0D22800AEE340 /* UIColor+ContrastRatio.swift */,
-				E0C9CA382BE0D22800AEE340 /* TactileSliderLayerRenderer.swift */,
-				E0C9CA392BE0D22800AEE340 /* TactileSlider.swift */,
-				E0C9CA3A2BE0D22800AEE340 /* TactileSlider+UIPointerInteractionDelegate.swift */,
-			);
-			name = TactileSlider;
-			path = "../../../../Downloads/iOS-Tactile-Slider-main/TactileSlider/TactileSlider";
 			sourceTree = "<group>";
 		};
 		E0F719652BD0F0C600D31F52 = {
@@ -323,12 +310,10 @@
 				E0A9C3BB2BD8DE5700C3D49C /* HeartInsightVC.swift in Sources */,
 				E0B7BE642BD29DDF00FA1D36 /* BubbleTabBarController.swift in Sources */,
 				E0B7BE662BD2A82000FA1D36 /* HomeVC.swift in Sources */,
-				E0C9CA3E2BE0D22800AEE340 /* TactileSlider.swift in Sources */,
 				E0A913DA2BD69BB300EB0AEC /* ReminderTableViewCell.swift in Sources */,
 				E0B7BE582BD1418700FA1D36 /* AccountInfoVC.swift in Sources */,
 				E0F7198A2BD1029E00D31F52 /* OnBoardingCVCell.swift in Sources */,
 				E0B7BE602BD29C7E00FA1D36 /* BubbleTabBar.swift in Sources */,
-				E0C9CA3B2BE0D22800AEE340 /* UIColor+ContrastRatio.swift in Sources */,
 				E0F719722BD0F0C600D31F52 /* AppDelegate.swift in Sources */,
 				E0A913D02BD664E600EB0AEC /* InsightVC.swift in Sources */,
 				E0B7BE5A2BD1582F00FA1D36 /* DisclaimerVC.swift in Sources */,
@@ -338,7 +323,6 @@
 				E0B7BE5E2BD2553C00FA1D36 /* MeasurementVC.swift in Sources */,
 				E0F719882BD0F1B700D31F52 /* CornerRadius.swift in Sources */,
 				E0C9CA412BE0D32C00AEE340 /* LaunchScreenVC.swift in Sources */,
-				E0C9CA3F2BE0D22800AEE340 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */,
 				E0A913CD2BD647DD00EB0AEC /* SettingsTableViewCell.swift in Sources */,
 				E0F719742BD0F0C600D31F52 /* SceneDelegate.swift in Sources */,
 				E0B7BE622BD29CEE00FA1D36 /* CBTabBarItem.swift in Sources */,
@@ -348,7 +332,6 @@
 				E0A5F58B2BD79C9200413011 /* HistoryVC.swift in Sources */,
 				E0A913DD2BD69ECC00EB0AEC /* ReminderVC.swift in Sources */,
 				E0A913C72BD63F5800EB0AEC /* SettingsVC.swift in Sources */,
-				E0C9CA3D2BE0D22800AEE340 /* TactileSliderLayerRenderer.swift in Sources */,
 				E0A5F5922BD7D60B00413011 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
